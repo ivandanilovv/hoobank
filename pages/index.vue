@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="custom-bg-color">
     <custom-navbar/>
   </div>
 </template>
