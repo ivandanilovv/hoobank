@@ -8,6 +8,9 @@
 import CustomNavbar from "~/components/CustomNavbar";
 export default {
   name: 'IndexPage',
-  components: {CustomNavbar}
+  components: {CustomNavbar},
+  head: {
+    title: 'HooBank',
+  }
 }
 </script>
