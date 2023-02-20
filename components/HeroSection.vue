@@ -1,8 +1,10 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col col-12 col-md-6 mt-5 pt-8 position-relative">
-        <div class="discount-bg-color p-2 rounded-3 w-65 fs-7 d-flex flex-row align-items-center">
+      <div class="col col-12 col-lg-6 mt-5 pt-8 position-relative text-center text-lg-start
+                  d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+        <div class="discount-bg-color p-2 rounded-3 discount-width fs-7
+          d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
           <img src="../assets/images/hero-section/discount-icon.svg" alt="Discount icon" class="ms-1"/>
           <span class="text-white ms-2">
             20% <span class="text-primary">DISCOUNT FOR</span> 1 MONTH <span class="text-primary">ACCOUNT</span>
@@ -12,13 +14,14 @@
           The Next<br/><span class="custom-font-gradient">Generation</span><br/> Payment Method.
         </h1>
         <p class="text-primary m-0">
-          Our team of experts uses a methodology to identify<br/> the credit cards most likely to fit your needs.<br/>
+          Our team of experts uses a methodology to identify<br class="d-none d-md-block"/>
+          the credit cards most likely to fit your needs.<br class="d-none d-md-block"/>
           We examine annual percentage rates, annual fees.
         </p>
         <div class="position-absolute w-65 h-75 top-0 start-minus-60 left-gradient"/>
       </div>
       <div
-        class="col col-12 col-md-6 p-0 py-5 d-flex flex-row justify-content-end align-items-center position-relative">
+        class="col col-12 col-lg-6 p-0 py-5 d-flex flex-row justify-content-end align-items-center position-relative">
         <div class="ratio ratio-1x1">
           <img src="../assets/images/hero-section/hand.svg" alt="Hand"/>
         </div>
@@ -98,6 +101,21 @@ export default {
 </script>
 
 <style scoped>
+.w-65 {
+  width: 65% !important;
+}
+
+@media (min-width: 1200px){
+  .discount-width {
+    width: 65% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .pt-8 {
+    padding-top: 8rem !important;
+  }
+}
 
 .custom-border-right {
   border-left: rgba(255, 255, 255, 0.6) 1.70386px solid;
@@ -124,10 +142,6 @@ p {
   font-weight: 400;
 }
 
-.pt-8 {
-  padding-top: 8rem !important;
-}
-
 .w-80 {
   width: 80% !important;
 }
@@ -144,9 +158,7 @@ p {
   left: -60%;
 }
 
-.w-65 {
-  width: 65% !important;
-}
+
 
 .h-75 {
   height: 75% !important;
