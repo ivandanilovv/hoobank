@@ -7,6 +7,7 @@
       <features/>
       <billing-and-invoicing/>
     </div>
+    <card-deal/>
   </div>
 </template>
 
@@ -15,10 +16,12 @@ import CustomNavbar from "~/components/CustomNavbar";
 import HeroSection from "@/components/HeroSection";
 import Features from "@/components/Features";
 import BillingAndInvoicing from "@/components/BillingAndInvoicing";
+import CardDeal from "@/components/CardDeal";
 
 export default {
   name: 'IndexPage',
   components: {
+    CardDeal,
     BillingAndInvoicing,
     Features,
     HeroSection,
