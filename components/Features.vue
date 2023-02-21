@@ -1,7 +1,7 @@
 <template>
   <div class="container py-3 py-md-5 mt-lg-5">
     <div class="row">
-      <div class="col col-12 col-md-6 text-center text-md-start">
+      <div class="col col-12 col-md-6 text-center text-lg-start">
         <h1 class="text-white m-0">
           You do the business,<br class="d-none d-lg-block"/>
           we’ll handle the money.
