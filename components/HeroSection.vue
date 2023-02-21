@@ -101,10 +101,6 @@ export default {
 </script>
 
 <style scoped>
-.w-65 {
-  width: 65% !important;
-}
-
 @media (min-width: 1200px){
   .discount-width {
     width: 65% !important;
@@ -152,28 +148,6 @@ p {
 
 .end-10 {
   right: 10%;
-}
-
-.start-minus-60 {
-  left: -60%;
-}
-
-
-
-.h-75 {
-  height: 75% !important;
-}
-
-.right-gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214D76 100%);
-  border: 1px solid #000000;
-  filter: blur(61.5px);
-}
-
-.left-gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214D76 100%);
-  border: 1px solid #000000;
-  filter: blur(130.5px);
 }
 
 .fs-7 {
