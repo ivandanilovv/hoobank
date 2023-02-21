@@ -17,11 +17,8 @@
           rhoncus aliporttitor integer platea placerat.
         </p>
         <div>
-          <a href="#">
-            <img src="../assets/images/billing-and-invoicing/appstore.svg" alt="App store download"/>
-          </a>
-          <a href="#">
-            <img src="../assets/images/billing-and-invoicing/playstore.svg" alt="Playstore download" class="ms-3"/>
+          <a v-for="(item, i) in downloadIcons" :href="item.link">
+            <img :src="item.src" :alt="item.alt" :class="{'ms-3' : i === 1}"/>
           </a>
         </div>
       </div>
@@ -31,7 +28,23 @@
 
 <script>
 export default {
-  name: "BillingAndInvoicing"
+  name: "BillingAndInvoicing",
+  data() {
+    return {
+      downloadIcons: [
+        {
+          src: require('../assets/images/billing-and-invoicing/appstore.svg'),
+          alt: 'App Store Download',
+          link: '#'
+        },
+        {
+          src: require('../assets/images/billing-and-invoicing/playstore.svg'),
+          alt: 'Play Store Download',
+          link: '#'
+        },
+      ]
+    }
+  }
 }
 </script>
 
