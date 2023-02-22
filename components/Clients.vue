@@ -1,8 +1,8 @@
 <template>
-  <div class="container py-5">
+  <div class="container py-3">
     <div class="row">
-      <div class="col col-6 col-lg-3 mt-3 d-flex flex-row align-items-center justify-content-center"
-           v-for="image in clientsImages">
+      <div class="col col-12 col-sm-6 col-lg-3 d-flex flex-row align-items-center justify-content-center mt-sm-2"
+           v-for="(image, i) in clientsImages" :class="{'mt-4' : i !== 0}">
           <img :src="image.src" :alt="image.alt"/>
       </div>
     </div>
