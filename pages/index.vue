@@ -9,6 +9,7 @@
     </div>
     <card-deal/>
     <people-reviews/>
+    <clients/>
   </div>
 </template>
 
@@ -19,10 +20,12 @@ import Features from "@/components/Features";
 import BillingAndInvoicing from "@/components/BillingAndInvoicing";
 import CardDeal from "@/components/CardDeal";
 import PeopleReviews from "@/components/PeopleReviews";
+import Clients from "@/components/Clients";
 
 export default {
   name: 'IndexPage',
   components: {
+    Clients,
     PeopleReviews,
     CardDeal,
     BillingAndInvoicing,
