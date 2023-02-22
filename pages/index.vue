@@ -8,6 +8,7 @@
       <billing-and-invoicing/>
     </div>
     <card-deal/>
+    <people-reviews/>
   </div>
 </template>
 
@@ -17,10 +18,12 @@ import HeroSection from "@/components/HeroSection";
 import Features from "@/components/Features";
 import BillingAndInvoicing from "@/components/BillingAndInvoicing";
 import CardDeal from "@/components/CardDeal";
+import PeopleReviews from "@/components/PeopleReviews";
 
 export default {
   name: 'IndexPage',
   components: {
+    PeopleReviews,
     CardDeal,
     BillingAndInvoicing,
     Features,
